@@ -1,0 +1,21 @@
+.test_template: &test_definition
+  # Uncomment below if you would like to run the tests on specific references
+  # only, such as the branches `master`, `development`, etc.
+  only:
+    - feature/package
+  #   - master
+  #   - development
+  script:
+    # Let's run the tests. Substitute `coverage = false` below, if you do not
+    # want coverage results.
+    - /opt/julia/bin/julia -e 'Pkg.clone(pwd()); Pkg.test("PAPA",
+      coverage = true)'
+    # Comment out below if you do not want coverage results.
+    - /opt/julia/bin/julia -e 'Pkg.add("Coverage"); cd(Pkg.dir("PAPA"));
+      using Coverage; cl, tl = get_summary(process_folder());
+      println("(", cl/tl*100, "%) covered")'
+
+# Name a test and select an appropriate image.
+test:1.0:
+  image: julialang/julia:v1.0
+  <<: *test_definition
