@@ -1,6 +1,6 @@
 ![PAPA](docs/images/PAPA_BEAR_small.png)
 
-**PA**irwise **P**erturbative **A**nsatz for **B**etter **E**stimation **A**nd **R**untime written in Julia
+**PAPA BEAR**: **PA**irwise **P**erturbative **A**nsatz for **B**etter **E**stimation **A**nd **R**untime written in Julia
 
 [![Build Status](https://travis-ci.com/BBN-Q/PAPA.jl.svg?branch=master)](https://travis-ci.com/BBN-Q/PAPA.jl)
 
