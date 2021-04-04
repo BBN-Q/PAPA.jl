@@ -8,6 +8,7 @@ LeastSquaresOptim = "0fc2ff8b-aaa3-5acd-a817-1944a5e08891"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
 [compat]
+LeastSquaresOptim = "0.8"
 julia = "1"
 
 [extras]
